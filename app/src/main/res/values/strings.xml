@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Business Card</string>
+    <string name="text_etse">ETSE</string>
+    <string name="text_etse_long">Escola Tècnica Superior d\'Enginyeria</string>
+    <string name="text_uab">Universitat Autònoma de Barcelona</string>
+    <string name="url_etse">www.uab.cat/escola-enginyeria</string>
+    <string name="email_etse">ga.enginyeria@uab.cat</string>
+    <string name="welcome_message">\"Releasing crazy engineers into the world since 1998\"</string>
+    <string name="facade_description">School of Engineering facade</string>
+    <string name="facebook_description">Facebook logo</string>
+    <string name="twitter_description">Twitter logo</string>
+    <string name="linkedin_description">Linkedin logo</string>
+    <string name="youtube_description">Youtube logo</string>
+</resources>

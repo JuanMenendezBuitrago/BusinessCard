@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.businesscard.MainActivity"
+        android:weightSum="1">
+
+        <ImageView
+            android:contentDescription="@string/facade_description"
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/etse" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/facebook_icon"
+                android:contentDescription="@string/facebook_description"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_facebook_50" />
+
+            <ImageView
+                android:id="@+id/twitter_icon"
+                android:contentDescription="@string/twitter_description"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_twitter" />
+
+            <ImageView
+                android:id="@+id/linkedin_icon"
+                android:contentDescription="@string/linkedin_description"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_linkedin" />
+
+            <ImageView
+                android:id="@+id/youtube_icon"
+                android:contentDescription="@string/youtube_description"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_youtube" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="sans-serif-light"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/text_etse"
+            android:textColor="#000"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/text_etse_long"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/uab_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/school_icon"
+                android:layout_marginRight="8dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_school_black_24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/text_uab"
+                android:layout_toRightOf="@+id/school_icon"
+                android:layout_toEndOf="@+id/school_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/etse_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/link_icon"
+                android:layout_marginRight="8dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_link_black_24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/url_etse"
+                android:layout_toRightOf="@+id/link_icon"
+                android:layout_toEndOf="@+id/link_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/email_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_marginRight="8dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_email_black_24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/email_etse"
+                android:layout_toRightOf="@+id/email_icon"
+                android:layout_toEndOf="@+id/email_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:text="@string/welcome_message" />
+    </LinearLayout></ScrollView>
